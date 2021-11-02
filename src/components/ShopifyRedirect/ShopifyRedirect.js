@@ -43,13 +43,16 @@ function ShopifyRedirect() {
 
   return (
     <>
-        <ul>
-          {customers.map((customer, index) => {
-            return (
-              <li key={index}>{`${index+1}. ${customer.first_name} ${customer.last_name} - ${customer.email} - Orders count: ${customer.orders_count}`}</li>
-            )
-          })}
-        </ul>
+        {!customers.length && <span>Loading...</span>}
+        {customers.length && (
+          <ul>
+            {customers.map((customer, index) => {
+              return (
+                <li key={index}>{`${index+1}. ${customer.first_name} ${customer.last_name} - ${customer.email} - Orders count: ${customer.orders_count}`}</li>
+              )
+            })}
+          </ul>
+        )}
     </>
   );
 }
