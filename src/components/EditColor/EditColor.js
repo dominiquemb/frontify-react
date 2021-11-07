@@ -77,7 +77,6 @@ function EditColor({showSuccess, showError}) {
 
     const changeColor = (color) => {
         setHex(color.hex);
-        setDisplayColorPicker(false);
     }
 
     const updateColorName = (evt) => {
@@ -131,9 +130,10 @@ function EditColor({showSuccess, showError}) {
                                 <Button onClick={() => setDisplayColorPicker(true)} className="color-picker-button" style={{backgroundColor:`${hex}`}}></Button>
                                 { displayColorPicker ?
                                     (<div className="color-picker">
-                                        <ChromePicker onChangeComplete={changeColor} />
+                                        <ChromePicker color={hex} onChangeComplete={changeColor} />
+                                        <Button variant="contained" style={{marginTop: '10px'}} onClick={() => setDisplayColorPicker(false)}>Close</Button>
                                     </div>) : null
-                                }  
+                                } 
                             </div>
                         </div>
                         <Button disabled={saving} variant="contained" className="save-button" onClick={saveColor}>Save</Button>
