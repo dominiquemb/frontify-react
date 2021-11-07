@@ -1,5 +1,7 @@
 # frontify-react
 
+This is a color picker demo for Frontify which includes a list of colors, ability to add new colors and edit existing colors, and a delete feature.
+
 Add these details in an .env file in the root folder:
 
 ```
