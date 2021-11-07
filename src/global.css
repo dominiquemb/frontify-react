@@ -1,7 +1,7 @@
 .title {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 10px;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    margin: 10px !important;
 }
 
 .content-box {
@@ -26,12 +26,12 @@
 }
 
 .color-picker-button {
-    display: inline-block;
+    display: inline-block !important;
     width: 20px; 
-    min-width: 20px;
+    min-width: 20px !important;
     height: 20px;
-    margin-top: 22px; 
-    border: 1px solid #000;
+    margin-top: 22px !important;
+    border: 1px solid #000 !important;
 }
 
 .color-picker-container {
