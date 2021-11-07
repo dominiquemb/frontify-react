@@ -1,0 +1,23 @@
+.actionButton {
+    float: right;
+    margin: 5px 5px !important;
+}
+
+.color-square {
+    display: inline-block;
+    width: 10px;
+    border: 1px solid #000;
+    height: 10px;
+    border-radius: 3px;
+}
+
+.loading-text {
+    display: block;
+    margin: 60px 10px 20px;
+}
+
+.add-color-button {
+    align-self: flex-end;
+    display: block;
+    margin: 10px 10px !important;
+}

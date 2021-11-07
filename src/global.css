@@ -1,0 +1,45 @@
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-wrapper {
+    margin: 30px;
+    padding: 20px;
+}
+
+.content-wrapper.with-back {
+    margin: 0px;
+}
+
+.save-button {
+    align-self: flex-end;
+    display: block;
+    margin: 10px 10px !important;
+}
+
+.color-picker-button {
+    display: inline-block;
+    width: 20px; 
+    min-width: 20px;
+    height: 20px;
+    margin-top: 22px; 
+    border: 1px solid #000;
+}
+
+.color-picker-container {
+    position: relative;
+    display: inline-block;
+}
+
+.color-picker {
+    position: absolute;
+    right: 0px;
+}
